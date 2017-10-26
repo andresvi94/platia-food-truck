@@ -7,4 +7,4 @@
 
 Copyright 2017 Andrés Vinueza
 
-Code released under the [MIT]
+Code released under the [MIT](LICENSE)
