@@ -2488,7 +2488,17 @@ legend {
 .info p {
   color: #999999;
 }
-
+.info-horizontal .icon {
+    float: left;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+.info-horizontal .icon > i {
+    font-size: 2.6em;
+}
+.info-horizontal .description {
+    overflow: hidden;
+}
 .icon.icon-primary {
   color: #9c27b0;
 }
