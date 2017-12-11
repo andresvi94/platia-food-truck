@@ -1,6 +1,6 @@
 node_modules
 *~
+.elasticbeanstalk/*
 bower_components
 .DS_Store
 credentials.js
-
