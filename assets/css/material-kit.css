@@ -2869,27 +2869,35 @@ h2.title {
 .carousel .carousel-caption {
   padding-bottom: 45px;
 }
-.carousel .carousel-caption2 {
-  margin-top: 70%;
-  margin-left: 33%;
-  position: absolute;
-  z-index: 1;
-}
+
 .carousel .carousel-caption .material-icons {
   position: relative;
   top: 5px;
+}
+
+#menu {
+  content: url("../img/platia/platia_menu.jpg");
 }
 
 .card {
   display: inline-block;
   position: relative;
   width: 80%;
-  /*width: 100%; */
+  /*width: 100%;*/
   border-radius: 3px;
   color: rgba(0,0,0, 0.87);
   background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
+@media (max-width: 480px) {
+  #menu {
+    content: url("../img/platia/platia_menu2.jpg");
+  }
+  .card {
+    width: 100%;
+  }
+}
+
 .card .card-height-indicator {
   margin-top: 100%;
 }
@@ -3697,6 +3705,7 @@ h2.title {
   /*height: 90vh;*/
   height: 60vh;
 }
+
 .index-page .brand {
   margin-top: 30vh;
   color: #FFFFFF;
@@ -3711,6 +3720,19 @@ h2.title {
   text-transform: uppercase;
   max-width: 400px;
   margin: 10px auto 0;
+}
+
+@media (max-width: 480px) {
+  .index-page .brand h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+  }
+  .index-page .brand h3 {
+    font-size: 1.0em;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin: 10px auto 0;
+  }
 }
 .index-page .section-basic {
   padding-top: 15px;
