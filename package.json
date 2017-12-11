@@ -5,6 +5,7 @@
   "description": "Platia Food Truck Website",
   "main": "platia.js",
   "scripts": {
+    "start": "node platia.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
