@@ -1750,6 +1750,11 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   height: 85px;
 }
 
+iframe {
+  height: 300px;
+  width: 100%;
+}
+
 .input-group-btn .btn {
   margin: 0 0 7px 0;
 }
