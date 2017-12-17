@@ -5,7 +5,6 @@ var express = require('express');
 AWS.config.region = 'us-east-1'
 var sns = new AWS.SNS();
 var snsTopic = process.env.NEW_SIGNUP_TOPIC;
-
 var app = express();
 
 app.disable('x-powered-by');
@@ -44,18 +43,12 @@ app.get('/contact-thanks', function(req, res){
 });
 
 app.post('/process', function(req, res, next){
-  console.log('Form : ' + req.query.form);
-  console.log('Name: ' + req.body.name);
-  console.log('Email: ' + req.body.email);
-  console.log('Phone: ' + req.body.phone);
-  console.log('Message: ' + req.body.message);
-
   sns.publish({
       'Message': 'Name: ' + req.body.name + "\r\nEmail: " + req.body.email
                           + "\r\nPhone: " + req.body.phone
                           + "\r\nMessage: " + req.body.message,
-      'Subject': 'Platia-Test',
-      'TopicArn': snsTopic
+      'Subject': req.body.subject,
+      'TopicArn': 'arn:aws:sns:us-east-1:715052692001:NotifyMe'
   }, function(err, data) {
       if (err) {
           res.status(500).end();
