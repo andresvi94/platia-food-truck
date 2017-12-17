@@ -117,6 +117,20 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 .navbar .navbar-nav > li > a.btn.btn-default {
   box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
 }
+
+.multi-column {
+   -moz-column-count: 3;
+   -moz-column-gap: 20px;
+   -moz-column-fill: auto;
+   -webkit-column-count: 3;
+   -webkit-column-gap: 20px;
+   -webkit-column-fill: auto;
+   column-count: 3;
+   column-gap: 20px;
+   column-fill: auto;
+   list-style-position: inside;
+}
+
 .btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover, .open > .btn.dropdown-toggle, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle:hover, .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active, .btn.btn-default:active:focus, .btn.btn-default:active:hover, .btn.btn-default.active:focus, .btn.btn-default.active:hover, .open > .btn.btn-default.dropdown-toggle, .open > .btn.btn-default.dropdown-toggle:focus, .open > .btn.btn-default.dropdown-toggle:hover,
 .navbar .navbar-nav > li > a.btn,
 .navbar .navbar-nav > li > a.btn:hover,
