@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/andresvi94/platia-food-truck#readme",
   "dependencies": {
+    "aws-sdk": "^2.171.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0"
