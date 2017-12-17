@@ -3219,8 +3219,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .section {
-  /*padding: 70px 0;*/
+  /* padding: 70px 0; */
   padding-top: 20px;
+}
+
+.section2 {
+  padding: 20px 0;
 }
 
 .section-navbars {
