@@ -1,4 +1,10 @@
+var AWS = require('aws-sdk');
 var express = require('express');
+
+// AWS.config.region = process.env.REGION
+AWS.config.region = 'us-east-1'
+var sns = new AWS.SNS();
+var snsTopic = process.env.NEW_SIGNUP_TOPIC;
 
 var app = express();
 
@@ -33,6 +39,36 @@ app.get('/contact', function(req, res){
   res.render('contact');
 });
 
+app.get('/contact-thanks', function(req, res){
+  res.render('thankyou');
+});
+
+app.post('/process', function(req, res, next){
+  console.log('Form : ' + req.query.form);
+  console.log('Name: ' + req.body.name);
+  console.log('Email: ' + req.body.email);
+  console.log('Phone: ' + req.body.phone);
+  console.log('Message: ' + req.body.message);
+
+  sns.publish({
+      'Message': 'Name: ' + req.body.name + "\r\nEmail: " + req.body.email
+                          + "\r\nPhone: " + req.body.phone
+                          + "\r\nMessage: " + req.body.message,
+      'Subject': 'Platia-Test',
+      'TopicArn': snsTopic
+  }, function(err, data) {
+      if (err) {
+          res.status(500).end();
+          // next();
+          console.log('SNS Error: ' + err);
+      } else {
+          res.status(201).end();
+      }
+  });
+
+  res.redirect(303, '/contact-thanks');
+});
+
 app.use(function(req, res, next){
   console.log("URL : " + req.url);
   next();
@@ -41,7 +77,7 @@ app.use(function(req, res, next){
 app.use(function(req, res){
   res.type('text/html');
   res.status(404);
-  res.redner('404');
+  res.render('404');
 });
 
 app.use(function(err, req, res, next){
