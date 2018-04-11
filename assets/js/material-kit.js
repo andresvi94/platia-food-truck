@@ -109,7 +109,7 @@ materialKitDemo = {
 
     }, 6),
     initContactUsMap: function(){
-         var myLatlng = new google.maps.LatLng(32.7897391, -79.9383071);
+         var myLatlng = new google.maps.LatLng(32.789706, -79.93801);
          var mapOptions = {
            zoom: 14,
            center: myLatlng,
@@ -120,7 +120,11 @@ materialKitDemo = {
          var map = new google.maps.Map(document.getElementById("contactUsMap"), mapOptions);
          var marker = new google.maps.Marker({
              position: myLatlng,
-             title:"Hello World!"
+             map: map,
+             title:"Platia"
+         });
+         marker.addListener('click', function() {
+           map.setZoom(18);
          });
          marker.setMap(map);
      }
