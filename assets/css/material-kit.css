@@ -3734,6 +3734,9 @@ h2.title {
   color: #FFFFFF;
   text-align: center;
 }
+.index-page .brand2 {
+  margin-top: -10vh;
+}
 .index-page .brand h1 {
   font-size: 4.8em;
   font-weight: 600;
