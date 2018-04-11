@@ -1,8 +1,8 @@
 {
   "name": "platia-food-truck",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
-  "description": "Platia Food Truck Website",
+  "description": "Platia Website",
   "main": "platia.js",
   "scripts": {
     "start": "node platia.js",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/andresvi94/platia-food-truck#readme",
   "dependencies": {
-    "aws-sdk": "^2.171.0",
+    "aws-sdk": "^2.224.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0"
