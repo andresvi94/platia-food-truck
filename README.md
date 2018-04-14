@@ -8,7 +8,7 @@ Website for Platia, LLC that serves as another point of discovery for potential 
 * [Bootstrap](https://getbootstrap.com)
 
 ## Author
-* [**Andres Vinueza**](andresvi94.github.io) - fullstack web development for this project. 
+* [**Andres Vinueza**](https://andresvi94.github.io) - fullstack web development for this project.
 
 ## Copyright and License
 
