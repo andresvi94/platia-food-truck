@@ -1,5 +1,4 @@
-# Platia Food Truck Website
-
+# Platia Website
 
 ## Creator
 
