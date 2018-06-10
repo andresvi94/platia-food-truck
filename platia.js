@@ -31,7 +31,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/menu', function(req, res){
-  res.render('menu');
+  res.render('about');
 });
 
 app.get('/contact', function(req, res){
