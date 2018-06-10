@@ -6,7 +6,8 @@
   "main": "platia.js",
   "scripts": {
     "start": "node platia.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production && npm start"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,12 @@
     "aws-sdk": "^2.224.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "fullcalendar": "^3.9.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1"
   }
 }
