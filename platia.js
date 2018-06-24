@@ -16,6 +16,7 @@ app.set('view engine', 'handlebars');
 
 //more imports
 app.use(require('body-parser').urlencoded({extended: false}));
+var moment = require('moment');
 //end imports
 app.set('port', process.env.PORT || 3000);
 
@@ -30,8 +31,12 @@ app.get('/', function(req, res){
   res.render('home');
 });
 
+app.get('/events', function(req, res){
+  res.render('events');
+});
+
 app.get('/menu', function(req, res){
-  res.render('about');
+  res.render('menu');
 });
 
 app.get('/contact', function(req, res){
