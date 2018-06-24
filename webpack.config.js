@@ -11,8 +11,7 @@ module.exports = {
     // shows how we can rely on browser globals instead of bundling these dependencies,
     // in case we want to access jQuery from a CDN or if we want an easy way to
     // avoid loading all moment locales: https://github.com/moment/moment/issues/1435
-    jquery: 'jQuery',
-    moment: 'moment'
+    jquery: 'jQuery'
   },
   devtool: 'sourcemap',
   resolve: {
