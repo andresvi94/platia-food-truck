@@ -1,11 +1,11 @@
 {
   "name": "platia-food-truck",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "Platia Website",
-  "main": "platia.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node platia.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production && npm start"
   },
