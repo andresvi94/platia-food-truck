@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  entry: './assets/js/example.js',
+  entry: './assets/js/calendar.js',
   output: {
-    filename: 'example.js',
+    filename: 'calendar.js',
     path: path.join(__dirname, 'dist')
   },
   target: 'node',
